@@ -1,0 +1,1234 @@
+{
+    "Items": [
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 37
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 37
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 37
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 37
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 38
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 38
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 38
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 38
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 39
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 41
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 41
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 41
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 42
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 42
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 42
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 42
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 42
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 42
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 42
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 43
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 43
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 44
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 45
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 46
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 46
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 47
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 47
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 48
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 48
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 48
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Man Is Dead",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 48
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 50
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 50
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "N",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 51
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 51
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "N",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 46,
+            "Second": 52
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 35
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 35
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 35
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 36
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 37
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 37
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 37
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 38
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 39
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 39
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 40
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 40
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 40
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 40
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 41
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 41
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 41
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 42
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 42
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 42
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 43
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 43
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 43
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 44
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 44
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 44
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 45
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 45
+        },
+        {
+            "Name": "Horn System",
+            "Value": "Horn UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 46
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 46
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 46
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 47
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 47
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 47
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 47
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 48
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 48
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 48
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 48
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 49
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 49
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P4",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 51
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 51
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 51
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 52
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "N",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 52
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 52
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "N",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 52
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 53
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 55
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Man Is Dead",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 55
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 55
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 55
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 56
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 56
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 57
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 57
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 57
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "N",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 58
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 58
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 58
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 58
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B6",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 58,
+            "Second": 59
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 0
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 0
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Opened",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 0
+        },
+        {
+            "Name": "Door System",
+            "Value": "Door is Closed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 0
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 1
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 1
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal Pressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 1
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Deadman Pedal UnPressed",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 2
+        },
+        {
+            "Name": "Deadman System",
+            "Value": "Man Is Dead",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 8
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 15
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 15
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 15
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "N",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 15
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 16
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 16
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 16
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P4",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 12,
+            "Minute": 59,
+            "Second": 16
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P3",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 13,
+            "Minute": 0,
+            "Second": 15
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 13,
+            "Minute": 0,
+            "Second": 15
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 13,
+            "Minute": 0,
+            "Second": 15
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "N",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 13,
+            "Minute": 0,
+            "Second": 16
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "B1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 13,
+            "Minute": 0,
+            "Second": 16
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P1",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 13,
+            "Minute": 5,
+            "Second": 33
+        },
+        {
+            "Name": "Ganti Node",
+            "Value": "P2",
+            "Day": 29,
+            "Month": 11,
+            "Year": 2019,
+            "Hour": 13,
+            "Minute": 5,
+            "Second": 33
+        }
+    ]
+}

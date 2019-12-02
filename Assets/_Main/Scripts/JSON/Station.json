@@ -1,0 +1,16 @@
+{
+    "Items": [
+        {
+            "Id": "123",
+            "Name": "Manggarai",
+            "PositionTime_0": 60.0,
+            "PositionTime_1": 300.0
+        },
+        {
+            "Id": "321",
+            "Name": "Bekasi",
+            "PositionTime_0": 300.0,
+            "PositionTime_1": 60.0
+        }
+    ]
+}

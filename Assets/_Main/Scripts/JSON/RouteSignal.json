@@ -1,0 +1,28 @@
+{
+    "Items": [
+        {
+            "Id": "0",
+            "SignalIds": [
+                "16",
+                "22",
+                "2",
+                "1",
+                "23"
+            ],
+            "ActiveTimeInSeconds": [
+                2,
+                13,
+                126,
+                221,
+                349
+            ],
+            "DeactiveTimeInSeconds": [
+                13,
+                41,
+                149,
+                248,
+                375
+            ]
+        }
+    ]
+}
