@@ -1,3 +1,13 @@
 {
-    "Items": []
+    "Items": [
+        {
+            "Id": "123",
+            "Name": "123",
+            "StationIds": [
+                "1",
+                "2"
+            ],
+            "RouteSignalId": "0"
+        }
+    ]
 }

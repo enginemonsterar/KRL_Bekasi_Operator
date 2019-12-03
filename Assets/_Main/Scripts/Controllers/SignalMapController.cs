@@ -17,16 +17,78 @@ public class SignalMapController : Singleton<SignalMapController>
     void Awake(){
         filePathTrainRoute = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/TrainRoute.json";
         filePathStation = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/Station.json";
+        filePathRouteSignal = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/RouteSignal.json";
     }
     void Start(){
-        LoadDataTrainRoute();
-        LoadDataStation();
-        
+
+        SetUpSignalSlider();        
     }
 
-    public void SetUpSignalSlider(string trainRouteId){
-        // TrainRoute tr = trainRoutes[0];
-        // SignalMapView.Instance.SetUpSignalSlider(tr.StationIds, tr.RouteSignal);
+    
+
+    public void SetUpSignalSlider(){
+        LoadDataTrainRoute();
+        LoadDataRouteSignal();
+        TrainRoute tr = trainRoutes[0];
+        
+        Debug.Log(tr.RouteSignalId);
+        SignalMapView.Instance.SetUpSignalSlider(FindStationsById(tr), FindRouteSignal(tr.RouteSignalId));
+    }
+
+    RouteSignal FindRouteSignal(string id){
+        
+        LoadDataRouteSignal();
+        
+        RouteSignal routeSignalFound = new RouteSignal();
+        
+        for (int i = 0; i < routeSignals.Count; i++)
+        {            
+            if(routeSignals[i].Id == id){
+                routeSignalFound = routeSignals[i];                
+            }
+            
+        }      
+
+        return routeSignalFound; 
+            
+    }
+
+    Station FindStation(string id){
+        
+        LoadDataStation();
+        
+        Station stationFound = new Station();
+        
+        for (int i = 0; i < stations.Count; i++)
+        {
+            if(stations[i].Id == id){
+                stationFound = stations[i];
+            }
+            
+        }      
+
+        return stationFound; 
+            
+    }
+
+    Station[] FindStationsById(TrainRoute tr){
+        
+        LoadDataStation();
+        
+        Station[] selectedStations = new Station[tr.StationIds.Length];
+        
+        int x = 0;
+        for (int i = 0; i < tr.StationIds.Length; i++)
+        {
+            stations.Exists(delegate(Station s) { 
+                    if(s.Id == tr.StationIds[i]){
+                        selectedStations[x] = s;                        
+                        x++;
+                    }
+                    return s.Id ==tr.StationIds[i];
+            });            
+        }   
+        return selectedStations;             
     }
     public void LoadDataStation(){
         //Read All Station from json
@@ -43,5 +105,13 @@ public class SignalMapController : Singleton<SignalMapController>
         TrainRoute[] trainRoutes_ = JsonHelper.FromJson<TrainRoute>(jsonFile);   
         //Convert array to list
         trainRoutes = new List<TrainRoute>(trainRoutes_);
+    }
+    public void LoadDataRouteSignal(){
+        //Read All Train RouteSignal from json
+        string jsonFile = File.ReadAllText(filePathRouteSignal);        
+        //Convert json object to RouteSignal class object
+        RouteSignal[] routeSignal_ = JsonHelper.FromJson<RouteSignal>(jsonFile);   
+        //Convert array to list
+        routeSignals = new List<RouteSignal>(routeSignal_);
     }
 }

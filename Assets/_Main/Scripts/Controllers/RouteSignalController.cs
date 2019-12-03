@@ -58,6 +58,7 @@ public class RouteSignalController : Singleton<RouteSignalController>
         LoadDataRouteSignal();
         LoadDataSignal();
 
+        //Find RouteSignal
         int routeSignalId = int.Parse(routeSignalIdInputField.text);
         RouteSignal routeSignal = routeSignals[routeSignalId];
         Signal[] selectedSignals = new Signal[routeSignal.SignalIds.Length];

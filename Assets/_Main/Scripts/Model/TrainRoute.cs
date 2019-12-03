@@ -10,13 +10,13 @@ public class TrainRoute
     public string Name;
     public string[] StationIds;
     public string RouteSignalId;
-    public string VideoClipName;
+    // public string VideoClipName;
 
-    public TrainRoute(string id, string name, string[] stationIds, string routeSignalId, string videoClipName){
+    public TrainRoute(string id, string name, string[] stationIds, string routeSignalId){
         this.Id = id;
         this.Name = name;        
         this.StationIds = stationIds;
         this.RouteSignalId = routeSignalId;
-        this.VideoClipName = videoClipName;
+        // this.VideoClipName = videoClipName;
     }
 }

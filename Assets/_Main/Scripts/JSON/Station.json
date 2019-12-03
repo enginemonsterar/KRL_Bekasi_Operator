@@ -1,15 +1,21 @@
 {
     "Items": [
         {
-            "Id": "123",
+            "Id": "1",
             "Name": "Manggarai",
-            "PositionTime_0": 60.0,
+            "PositionTime_0": 0,
             "PositionTime_1": 300.0
         },
         {
-            "Id": "321",
+            "Id": "2",
+            "Name": "Jatinegara",
+            "PositionTime_0": 250,
+            "PositionTime_1": 300.0
+        },
+        {
+            "Id": "3",
             "Name": "Bekasi",
-            "PositionTime_0": 300.0,
+            "PositionTime_0": 500.0,
             "PositionTime_1": 60.0
         }
     ]

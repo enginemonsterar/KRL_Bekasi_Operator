@@ -56,12 +56,86 @@ public class TrainRouteController : Singleton<TrainRouteController>
 
     public void Add(){
         if(TrainRouteView.Instance.idInputField.text != "" && TrainRouteView.Instance.nameInputField.text != ""){
+            if(TrainRouteView.Instance.startStationDropdown.value != TrainRouteView.Instance.finishStationDropdown.value){
+
+                LoadDataRouteSignal();
+                
+                string startStationId = TrainRouteView.Instance.startStationDropdown.value.ToString();
+                string finishStationId = TrainRouteView.Instance.finishStationDropdown.value.ToString();
+
+                bool startIsGreater = false;
+
+                int totalStation = 0;
+
+                string[] selectedStationIds;
+                int selectedRouteSignalId;
+                // Debug.Log("asdasd " + startStationId);
+                // Debug.Log("asdasd " + finishStationId);
+                if(int.Parse(startStationId) > int.Parse(finishStationId)){
+                    startIsGreater = true;
+                    selectedRouteSignalId = 1;
+                    totalStation = ((int.Parse(startStationId)+1) - (int.Parse(finishStationId)+1) + 1);
+                    selectedStationIds = new string[totalStation];
+                    int x = 0;
+                    for (int i = int.Parse(startStationId)+1; i > int.Parse(finishStationId); i--)
+                    {
+                        selectedStationIds[x] = i.ToString();
+                        x++;
+                    }
+                }else{                    
+                    selectedRouteSignalId = 0;
+                    totalStation = (((int.Parse(finishStationId)) - (int.Parse(startStationId))) + 1);
+                    selectedStationIds = new string[totalStation];
+                    int x = 0;
+                    for (int i = int.Parse(startStationId)+1; i < int.Parse(finishStationId)+2; i++)
+                    {
+                        selectedStationIds[x] = i.ToString();
+                        x++;
+                    }
+                }
+            
+                for (int i = 0; i < selectedStationIds.Length; i++)
+                {
+                    Debug.Log("Id: " + selectedStationIds[i]);
+                }
+
+                //Create new TrainRoute
+                TrainRoute newTrainRoute = new TrainRoute(
+                    TrainRouteView.Instance.idInputField.text,
+                    TrainRouteView.Instance.nameInputField.text,
+                    selectedStationIds,
+                    selectedRouteSignalId.ToString()                    
+                );
+
+                LoadDataTrainRoute();
+                //Add new TrainRoute to list
+                this.trainRoutes.Add(newTrainRoute);
+                
+                //Write TrainRoute list to json object
+                string jsonData = JsonHelper.ToJson(this.trainRoutes.ToArray(), true);
+                File.WriteAllText(filePathTrainRoute, jsonData);  
+                
+                //Close Form
+                TrainRouteView.Instance.form.SetActive(false);
+            
+                ConsoleController.Instance.ShowNotif("Tambah Rute Berhasil ");
+            }else{
+                ConsoleController.Instance.ShowWarning("Stasiun akhir dan awal tidak boleh sama!");    
+            }
+
+        }else{
+            ConsoleController.Instance.ShowWarning("Isi Semua Kolom!");
+        }
+    }
+
+    /*
+    public void Add(){
+        if(TrainRouteView.Instance.idInputField.text != "" && TrainRouteView.Instance.nameInputField.text != ""){
             LoadDataRouteSignal();
             RouteSignal selectedRouteSignal = new RouteSignal();
             for (int i = 0; i < routeSignals.Count; i++)
             {
                 if(routeSignals[i].Id == TrainRouteView.Instance.routeSignalDropdown.transform.GetChild(0).GetComponent<Text>().text){
-
                     selectedRouteSignal = routeSignals[i];
                 }
             }
@@ -97,10 +171,11 @@ public class TrainRouteController : Singleton<TrainRouteController>
             ConsoleController.Instance.ShowWarning("Isi Semua Kolom!");
         }
     }
+    */
 
     public void ShowAddForm(){
-        LoadDataRouteSignal();
-        TrainRouteView.Instance.ShowAddForm(routeSignals);
+        LoadDataStation();
+        TrainRouteView.Instance.ShowAddForm(stations);
     }
 
     public void ShowList(){
@@ -108,21 +183,41 @@ public class TrainRouteController : Singleton<TrainRouteController>
         TrainRouteView.Instance.ShowList(trainRoutes);
     }
 
-    public void ShowStationList(){
-        LoadDataStation();
-        TrainRouteView.Instance.ShowStationList(stations, selectedStations);
-    }
-
-    public void AddStationToTrainRoute(string id){
-        LoadDataStation();
-        for (int i = 0; i < stations.Count; i++)
+    public void Delete(string trainRouteId){
+        LoadDataTrainRoute();
+        
+        for (int i = 0; i < trainRoutes.Count; i++)
         {
-            if(stations[i].Id == id){
-                selectedStations.Add(stations[i]);   
-                TrainRouteView.Instance.UpdateSelectedStationTable(selectedStations);             
+            if(trainRoutes[i].Id == trainRouteId){
+                trainRoutes.Remove(trainRoutes[i]);
             }
         }
+
+        //Write Train Route list to json object
+        string jsonData = JsonHelper.ToJson(this.trainRoutes.ToArray(), true);
+        File.WriteAllText(filePathTrainRoute, jsonData);  
+        
+        //Close Form
+        TrainRouteView.Instance.table.SetActive(false);
+        
+        ConsoleController.Instance.ShowNotif("Hapus Rute Berhasil");
     }
+
+    // public void ShowStationList(){
+    //     LoadDataStation();
+    //     TrainRouteView.Instance.ShowStationList(stations, selectedStations);
+    // }
+
+    // public void AddStationToTrainRoute(string id){
+    //     LoadDataStation();
+    //     for (int i = 0; i < stations.Count; i++)
+    //     {
+    //         if(stations[i].Id == id){
+    //             selectedStations.Add(stations[i]);   
+    //             TrainRouteView.Instance.UpdateSelectedStationTable(selectedStations);             
+    //         }
+    //     }
+    // }
 
     // public void ShowEditForm(string trainRouteId){        
     //     LoadDataTrainRoute();
@@ -170,35 +265,17 @@ public class TrainRouteController : Singleton<TrainRouteController>
         
     // }
 
-    public void DeleteStationFromTrainRoute(string id){
+    // public void DeleteStationFromTrainRoute(string id){
         
-        for (int i = 0; i < selectedStations.Count; i++)
-        {
-            if(stations[i].Id == id){
-                Debug.Log("Delete a selected station");
-                selectedStations.Remove(selectedStations[i]);
-                TrainRouteView.Instance.UpdateSelectedStationTable(selectedStations);             
-            }
-        }
-    }
+    //     for (int i = 0; i < selectedStations.Count; i++)
+    //     {
+    //         if(stations[i].Id == id){
+    //             Debug.Log("Delete a selected station");
+    //             selectedStations.Remove(selectedStations[i]);
+    //             TrainRouteView.Instance.UpdateSelectedStationTable(selectedStations);             
+    //         }
+    //     }
+    // }
 
-    public void Delete(string trainRouteId){
-        LoadDataTrainRoute();
-        
-        for (int i = 0; i < trainRoutes.Count; i++)
-        {
-            if(trainRoutes[i].Id == trainRouteId){
-                trainRoutes.Remove(trainRoutes[i]);
-            }
-        }
-
-        //Write Train Route list to json object
-        string jsonData = JsonHelper.ToJson(this.trainRoutes.ToArray(), true);
-        File.WriteAllText(filePathTrainRoute, jsonData);  
-        
-        //Close Form
-        TrainRouteView.Instance.table.SetActive(false);
-        
-        ConsoleController.Instance.ShowNotif("Hapus Rute Berhasil");
-    }
+    
 }

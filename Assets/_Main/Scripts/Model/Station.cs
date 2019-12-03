@@ -16,5 +16,9 @@ public class Station
         this.PositionTime_0 = PositionTime_0;
         this.PositionTime_1 = PositionTime_1;
     }
+
+    public Station(){
+        
+    }
     
 }
