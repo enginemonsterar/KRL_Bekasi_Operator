@@ -31,7 +31,7 @@ public class SignalMapController : Singleton<SignalMapController>
         LoadDataRouteSignal();
         TrainRoute tr = trainRoutes[0];
         
-        Debug.Log(tr.RouteSignalId);
+        // Debug.Log(tr.RouteSignalId);
         SignalMapView.Instance.SetUpSignalSlider(FindStationsById(tr), FindRouteSignal(tr.RouteSignalId));
     }
 

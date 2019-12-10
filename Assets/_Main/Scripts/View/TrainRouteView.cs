@@ -65,9 +65,12 @@ public class TrainRouteView : Singleton<TrainRouteView>
         addButtonObject.SetActive(true);
     }
 
-    public void ShowList(List<TrainRoute> trainRoutes){
+    public void ShowList(List<TrainRoute> trainRoutes, List<Station> stations)
+    {
+                       
 
         table.SetActive(true);       
+        
         
         //reset content        
         for (int i = 0; i < tableContent.transform.childCount; i++)
@@ -75,13 +78,24 @@ public class TrainRouteView : Singleton<TrainRouteView>
             Destroy(tableContent.transform.GetChild(i).gameObject);
         }
         for (int i = 0; i < trainRoutes.Count; i++)
-        {       
-            Debug.Log(trainRoutes.Count);     
+        {                   
+            List<Station> selectedStations = new List<Station>();
+            for (int j = 0; j < trainRoutes[i].StationIds.Length; j++)
+            {
+                stations.Exists(delegate(Station s) { 
+                        if(s.Id == trainRoutes[i].StationIds[j]){
+                            selectedStations.Add(s);
+                            
+                        }
+                        return s.Id ==  trainRoutes[i].StationIds[j];
+                    }); 
+            }
+
             GameObject row = Instantiate(trainRouteRow,tableContent.transform);
             row.transform.GetChild(0).GetComponent<Text>().text = i + 1 + ""; //Number
             row.transform.GetChild(1).GetComponent<Text>().text = trainRoutes[i].Id; //Id
             row.transform.GetChild(2).GetComponent<Text>().text = trainRoutes[i].Name; //Name   
-            // row.transform.GetChild(3).GetComponent<Text>().text = trainRoutes[i].VideoClipName; //VideoClip Name   
+            row.transform.GetChild(3).GetComponent<Text>().text = selectedStations[0].Name + " - " + selectedStations[selectedStations.Count-1].Name; //Stations
                     
             row.transform.GetChild(5).GetComponent<Button>().onClick.AddListener(delegate() {
                 TrainRouteController.Instance.Delete(row.transform.GetChild(1).GetComponent<Text>().text);                

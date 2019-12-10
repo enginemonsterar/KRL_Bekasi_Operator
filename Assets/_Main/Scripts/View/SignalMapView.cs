@@ -56,23 +56,23 @@ public class SignalMapView : Singleton<SignalMapView>
         Signal[] selectedSignal = new Signal[routeSignal.SignalIds.Length];
         selectedSignal = FindSignals(routeSignal.SignalIds);
 
-        for (int i = 0; i < routeSignal.SignalIds.Length; i++)
-        {
-            GameObject slider = Instantiate(signalSliderObject,signalSliderParent);
-            // slider.GetComponent<Slider>().handleRect.transform.GetChild(0).GetComponent<Text>().text = selectedSignal[i].Name;
-            slider.GetComponent<Slider>().value = routeSignal.ActiveTimeInSeconds[i];
+        // for (int i = 0; i < routeSignal.SignalIds.Length; i++)
+        // {
+        //     GameObject slider = Instantiate(signalSliderObject,signalSliderParent);
+        //     // slider.GetComponent<Slider>().handleRect.transform.GetChild(0).GetComponent<Text>().text = selectedSignal[i].Name;
+        //     slider.GetComponent<Slider>().value = routeSignal.ActiveTimeInSeconds[i];
 
-            //Change Sprite
-            string path = "Sprites/" + selectedSignal[i].SpriteName;
-            slider.GetComponent<Slider>().handleRect.transform.GetChild(1).GetComponent<Image>().sprite = Resources.Load<Sprite>(path);
-            // slider.GetComponent<Slider>().handleRect.GetComponent<Image>().sprite = Resources.Load<Sprite>(path);
+        //     //Change Sprite
+        //     string path = "Sprites/" + selectedSignal[i].SpriteName;
+        //     slider.GetComponent<Slider>().handleRect.transform.GetChild(1).GetComponent<Image>().sprite = Resources.Load<Sprite>(path);
+        //     // slider.GetComponent<Slider>().handleRect.GetComponent<Image>().sprite = Resources.Load<Sprite>(path);
             
-        }
+        // }
 
         for (int i = 0; i < stations.Length; i++)
         {
             GameObject slider = Instantiate(stationSliderObject,signalSliderParent);
-            slider.GetComponent<Slider>().handleRect.transform.GetChild(0).GetComponent<Text>().text = "Stasiun " + stations[i].Name;
+            slider.GetComponent<Slider>().handleRect.transform.GetChild(0).GetComponent<Text>().text = "St." + stations[i].Name;
             slider.GetComponent<Slider>().value = stations[i].PositionTime_0;
         }
     }

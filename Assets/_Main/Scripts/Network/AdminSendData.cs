@@ -19,6 +19,10 @@ namespace MonsterAR.Network{
                 enabled = false;
             }
         }
+
+        public void SendTravelPass(TravelPass travelPass){                          
+            networkIdentity.GetSocket().Emit("TravelPass", new JSONObject(JsonUtility.ToJson(travelPass)));
+        }
                 
         public void Login(string username, string password){  
             

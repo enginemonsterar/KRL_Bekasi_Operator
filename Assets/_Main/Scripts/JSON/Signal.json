@@ -98,9 +98,9 @@
         },
         {
             "Id": "17",
-            "Name": "semboyan-06",
-            "Description": "semboyan-06",
-            "SpriteName": "semboyan-06"
+            "Name": "semboyan_06",
+            "Description": "semboyan_06",
+            "SpriteName": "semboyan_06"
         },
         {
             "Id": "18",
@@ -122,9 +122,9 @@
         },
         {
             "Id": "21",
-            "Name": "semboyan-21",
-            "Description": "semboyan-21",
-            "SpriteName": "semboyan-21"
+            "Name": "semboyan_21",
+            "Description": "semboyan_21",
+            "SpriteName": "semboyan_21"
         },
         {
             "Id": "22",

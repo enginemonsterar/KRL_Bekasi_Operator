@@ -4,13 +4,12 @@ using System;
 public class LogHistory
 {
     public string Id;
-    public TrainRoute TrainRoute;    
-    public string[] ActionLogIds;
+    public string TravelPassId;    
 
-    public LogHistory(string name, TrainRoute trainRoute, string[] actionLogIds){
+    public LogHistory(string name, string travelPassId){
         this.Id = name;
-        this.TrainRoute = trainRoute;
-        this.ActionLogIds = actionLogIds;
+        this.TravelPassId = travelPassId;
+        
     }
 
     public LogHistory(){

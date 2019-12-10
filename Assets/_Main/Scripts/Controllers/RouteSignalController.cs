@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.IO;
 using MonsterAR.Utility;
 
@@ -89,8 +90,8 @@ public class RouteSignalController : Singleton<RouteSignalController>
             selectedSignalObj.transform.GetChild(1).GetComponent<Image>().sprite = Resources.Load<Sprite>(path);
             selectedSignalObj.transform.GetChild(2).GetComponent<Text>().text = selectedSignals[i].Id;
             selectedSignalObj.transform.GetChild(3).GetComponent<Text>().text = selectedSignals[i].SpriteName;
-            selectedSignalObj.transform.GetChild(4).GetComponent<Text>().text = activeSecondIF.text + ":" + activeMinuteIF.text + ":" + activeHourIF.text;
-            selectedSignalObj.transform.GetChild(5).GetComponent<Text>().text = deactiveSecondIF.text + ":" + deactiveMinuteIF.text + ":" + deactiveHourIF.text;    
+            selectedSignalObj.transform.GetChild(4).GetComponent<Text>().text = TimeSpan.FromSeconds(routeSignal.ActiveTimeInSeconds[i]).ToString(@"hh\:mm\:ss");
+            selectedSignalObj.transform.GetChild(5).GetComponent<Text>().text = TimeSpan.FromSeconds(routeSignal.DeactiveTimeInSeconds[i]).ToString(@"hh\:mm\:ss");   
             selectedSignalObj.transform.GetChild(6).GetComponent<Button>().onClick.AddListener(delegate() { DeleteSelectedSignal(selectedSignalObj.transform.GetChild(2).GetComponent<Text>().text,i); });                        
         }
     }

@@ -19,4 +19,8 @@ public class TrainRoute
         this.RouteSignalId = routeSignalId;
         // this.VideoClipName = videoClipName;
     }
+
+    public TrainRoute(){
+        
+    }
 }

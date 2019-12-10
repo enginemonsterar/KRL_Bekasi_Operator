@@ -68,9 +68,7 @@ public class TrainRouteController : Singleton<TrainRouteController>
                 int totalStation = 0;
 
                 string[] selectedStationIds;
-                int selectedRouteSignalId;
-                // Debug.Log("asdasd " + startStationId);
-                // Debug.Log("asdasd " + finishStationId);
+                int selectedRouteSignalId;                
                 if(int.Parse(startStationId) > int.Parse(finishStationId)){
                     startIsGreater = true;
                     selectedRouteSignalId = 1;
@@ -180,7 +178,10 @@ public class TrainRouteController : Singleton<TrainRouteController>
 
     public void ShowList(){
         LoadDataTrainRoute();
-        TrainRouteView.Instance.ShowList(trainRoutes);
+        LoadDataStation();
+
+
+        TrainRouteView.Instance.ShowList(trainRoutes, stations);
     }
 
     public void Delete(string trainRouteId){
