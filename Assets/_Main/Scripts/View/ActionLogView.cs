@@ -10,9 +10,28 @@ public class ActionLogView : Singleton<ActionLogView>
     public GameObject table;
     public GameObject tableContent;
     public GameObject actionLogRow;
+    public Dropdown travelPassDropdown;
+
+    // public List<TravelPass> travelPasses = new List<TravelPass>();
 
 
-    
+    public void SetupTravelPassDropDown(List<TravelPass> travelPasses){
+        
+        
+        // //TravelPass Dropdown
+        // for (int i = 0; i < travelPasses.Count; i++)
+        // {
+            
+        //     Dropdown.OptionData newOption = new Dropdown.OptionData(travelPasses[i].Name);
+        //     machinistDropDown.options.Add(newOption);                        
+        // }
+        // //Train Route Dropdown
+        // for (int i = 0; i < trainRoutes.Count; i++)
+        // {            
+        //     Dropdown.OptionData newOption = new Dropdown.OptionData(trainRoutes[i].Name);
+        //     trainRouteDropDown.options.Add(newOption);                        
+        // }
+    }
 
     public void ShowList(List<ActionLog> ActionLogList){
         table.SetActive(true);

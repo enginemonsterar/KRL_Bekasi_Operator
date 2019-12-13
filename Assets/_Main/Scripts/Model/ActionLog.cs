@@ -3,6 +3,7 @@ using System;
 [Serializable]
 public class ActionLog
 {
+    public string TravelPassId;
     public string Name;
     public string Value;
     public int Day;
@@ -12,7 +13,8 @@ public class ActionLog
     public int Minute;
     public int Second;
 
-    public ActionLog(string name, string value, DateTime dateTime){
+    public ActionLog(string travelPassId, string name, string value, DateTime dateTime){
+        this.TravelPassId = travelPassId;
         this.Name = name;
         this.Value = value;
         this.Day = DateTime.Now.Day;
@@ -24,7 +26,8 @@ public class ActionLog
 
     }
 
-    public ActionLog(string name, string value, int day, int month, int year, int hours, int minutes, int seconds){
+    public ActionLog(string travelPassId, string name, string value, int day, int month, int year, int hours, int minutes, int seconds){
+        this.TravelPassId = travelPassId;
         this.Name = name;
         this.Value = value;
         this.Day = day;

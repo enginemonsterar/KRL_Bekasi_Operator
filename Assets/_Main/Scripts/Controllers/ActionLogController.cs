@@ -8,13 +8,19 @@ using MonsterAR.Utility;
 public class ActionLogController : Singleton<ActionLogController>
 {
     private List<ActionLog> actionLogs;
+    private List<TravelPass> travelPasses;
+
+    private List<Machinist> machinists;
+    private List<TrainRoute> trainRoutes;
+    private string filePathTravelPass;
+    private string filePathMachinist;    
+    private string filePathTrainRoute;
     private string filePath;
-    public void Add(string name, string value){
-            
+    public void Add(string logHistoryId, string name, string value){
+        
         LoadData();
-        
-        
-        ActionLog actionLog = new ActionLog(name, value, DateTime.Now);
+                
+        ActionLog actionLog = new ActionLog(logHistoryId, name, value, DateTime.Now);
         
         //Add new ActionLog to list
         this.actionLogs.Add(actionLog);
@@ -25,7 +31,7 @@ public class ActionLogController : Singleton<ActionLogController>
     }
     void Awake(){
         filePath = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/ActionLog.json";
-        // ShowList();
+        
     }
 
     public void LoadData(){
@@ -37,10 +43,7 @@ public class ActionLogController : Singleton<ActionLogController>
         actionLogs = new List<ActionLog>(actions_);
     }
         
-    public void ShowList(){
-        LoadData();        
-        ActionLogView.Instance.ShowList(actionLogs);
-    }
+   
     
     
     

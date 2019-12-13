@@ -35,13 +35,13 @@ public class TravelPassView : Singleton<TravelPassView>
             Dropdown.OptionData newOption = new Dropdown.OptionData(machinists[i].Name);
             machinistDropDown.options.Add(newOption);                        
         }
-
         //Train Route Dropdown
         for (int i = 0; i < trainRoutes.Count; i++)
         {            
             Dropdown.OptionData newOption = new Dropdown.OptionData(trainRoutes[i].Name);
             trainRouteDropDown.options.Add(newOption);                        
         }
+
 
     }
 
@@ -98,7 +98,7 @@ public class TravelPassView : Singleton<TravelPassView>
             if(!travelPassList[i].Active){
                 row.transform.GetChild(4).transform.GetChild(0).GetComponent<Button>().interactable = true; //Name   
             }
-            row.transform.GetChild(4).transform.GetChild(0).GetComponent<Button>().onClick.AddListener(delegate() { TravelPassController.Instance.Send(row.transform.GetChild(1).GetComponent<Text>().text); });                        
+            row.transform.GetChild(4).transform.GetChild(0).GetComponent<Button>().onClick.AddListener(delegate() { TravelPassController.Instance.Activate(row.transform.GetChild(1).GetComponent<Text>().text); });                        
             // row.transform.GetChild(4).GetComponent<Button>().onClick.AddListener(delegate() { MachinistController.Instance.Delete(row.transform.GetChild(1).GetComponent<Text>().text); });                        
         }
     }
@@ -106,7 +106,7 @@ public class TravelPassView : Singleton<TravelPassView>
     public void UpdateStartFinishStationText(){
 
         TrainRoute selectedTrainRoute = trainRoutes[trainRouteDropDown.value];
-
+        Debug.Log("asdasd");
         //Start and Finish Station
         for (int i = 0; i < stations.Count; i++)
         {

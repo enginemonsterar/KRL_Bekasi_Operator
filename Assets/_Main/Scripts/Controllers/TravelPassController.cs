@@ -7,7 +7,7 @@ using MonsterAR.Network;
 
 public class TravelPassController : Singleton<TravelPassController>
 {
-    private List<TravelPass> travelPasses;
+    private List<TravelPass> travelPasses;    
     private List<Machinist> machinists;
     private List<Station> stations;
     private List<TrainRoute> trainRoutes;
@@ -15,12 +15,14 @@ public class TravelPassController : Singleton<TravelPassController>
     private string filePathMachinist;
     private string filePathStation;
     private string filePathTrainRoute;
+    
 
     void Awake(){
         filePathTravelPass = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/TravelPass.json";
         filePathMachinist = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/Machinist.json";
         filePathStation = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/Station.json";
         filePathTrainRoute = Application.dataPath  + "/_Main" + "/Scripts" + "/JSON" + "/TrainRoute.json";
+        
     }
 
     void Start(){
@@ -72,13 +74,25 @@ public class TravelPassController : Singleton<TravelPassController>
         TravelPassView.Instance.ShowForm(machinists, stations, trainRoutes);
     }
 
-    public void Send(string id){
+    public void Activate(string id){
         for (int i = 0; i < travelPasses.Count; i++)
         {
-            if(travelPasses[i].Id == id)
+            if(travelPasses[i].Id == id){
                 AdminSendData.Instance.SendTravelPass(travelPasses[i]);
+
+                travelPasses[i].Active = true;
+                                          
+                //Write travel pass list to json object
+                string jsonData = JsonHelper.ToJson(this.travelPasses.ToArray(), true);
+                File.WriteAllText(filePathTravelPass, jsonData);  
+
+                                                                              
+            }
+
         }
     }
+
+    
 
     public void LoadDataTravelPass(){
         //Read All TravelPass from json

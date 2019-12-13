@@ -41,6 +41,12 @@ namespace MonsterAR.Network{
                 Debug.Log("Connection made to The Server");                
             });
 
+            On("Lamp_", (E) => {                                
+                Debug.Log("Status Lamp: " + E.data["Status"]);  
+                if(GameObject.Find("LampSystem")) 
+                    LampSystem.Instance.ChangesLamp(bool.Parse(E.data["Status"].ToString()));                
+            });
+
             On("NodeLevel_", (E) => {                                
                 // Debug.Log("Get Node Level: " + E.data["Level"]);  
                 if(GameObject.Find("ThrottleOPView")) 
@@ -73,8 +79,9 @@ namespace MonsterAR.Network{
                     SignalMapView.Instance.UpdateMainSlider(E.data["Time"].ToString());
             });
             On("ActionLog_", (E) => {   
-                if(GameObject.Find("ActionLogController"))
-                    ActionLogController.Instance.Add(E.data["Name"].ToString().Replace("\"", string.Empty).Trim(), E.data["Value"].ToString().Replace("\"", string.Empty).Trim());
+                if(GameObject.Find("ActionLogController")){                    
+                    ActionLogController.Instance.Add(E.data["LogHistoryId"].ToString().Replace("\"", string.Empty).Trim(), E.data["Name"].ToString().Replace("\"", string.Empty).Trim(), E.data["Value"].ToString().Replace("\"", string.Empty).Trim());
+                }
                 // Debug.Log("OIOIOI: " + E.data["Name"].ToString().Replace("\"", string.Empty).Trim());                                             
             });
 
